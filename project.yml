@@ -1,0 +1,114 @@
+name: Vanity
+
+options:
+  # Change this to your own reverse-DNS prefix before uploading to TestFlight.
+  bundleIdPrefix: com.example.vanity
+  deploymentTarget:
+    macOS: "14.0"
+    iOS: "17.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    # Set your Apple Developer Team ID here (Xcode → Settings → Accounts), or pick it in Xcode's Signing tab.
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+
+packages:
+  VanityKit:
+    path: Packages/VanityKit
+
+targets:
+  Vanity:
+    type: application
+    platform: macOS
+    sources:
+      - path: Apps/Mac
+    dependencies:
+      - package: VanityKit
+    settings:
+      base:
+        PRODUCT_NAME: Vanity
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.vanity.mac
+        ENABLE_HARDENED_RUNTIME: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.lifestyle
+    info:
+      path: Apps/Mac/Info.plist
+      properties:
+        CFBundleDisplayName: Vanity
+        LSApplicationCategoryType: public.app-category.lifestyle
+        NSCameraUsageDescription: Vanity uses your cameras so you can see every side of your hair.
+        NSLocalNetworkUsageDescription: Vanity finds your iPad or iPhone running Vanity Cam on your Wi-Fi so it can show its camera.
+        NSBonjourServices:
+          - _vanitymirror._tcp
+    entitlements:
+      path: Apps/Mac/Vanity.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.device.camera: true
+        com.apple.security.network.server: true
+        com.apple.security.network.client: true
+
+  VanityCam:
+    type: application
+    platform: iOS
+    sources:
+      - path: Apps/Cam
+    dependencies:
+      - package: VanityKit
+    settings:
+      base:
+        PRODUCT_NAME: Vanity Cam
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.vanity.cam
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    info:
+      path: Apps/Cam/Info.plist
+      properties:
+        CFBundleDisplayName: Vanity Cam
+        NSCameraUsageDescription: Vanity Cam shows this camera on your Mac so you can see the back and sides of your hair.
+        NSLocalNetworkUsageDescription: Vanity Cam looks for your Mac on Wi-Fi so it can send it the camera picture.
+        NSBonjourServices:
+          - _vanitymirror._tcp
+        UILaunchScreen: {}
+        UIRequiresFullScreen: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+
+  VanityTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: Tests/VanityTests
+    dependencies:
+      - target: Vanity
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.vanity.tests
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Vanity.app/Contents/MacOS/Vanity"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+
+schemes:
+  Vanity:
+    build:
+      targets:
+        Vanity: all
+    test:
+      targets:
+        - VanityTests
+        - package: VanityKit/VanityKitTests
+  VanityCam:
+    build:
+      targets:
+        VanityCam: all

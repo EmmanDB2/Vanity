@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00A9B10B35EC43CF2375D0E8 /* LookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF2AFFF675844A613CDEE0 /* LookDetailView.swift */; };
+		087326ED1D1CA97C219EB354 /* LookStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE28AC43F672CCFC975EC9EE /* LookStoreTests.swift */; };
+		1C4F3BF0C7272E19D45A2888 /* LookModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB592DA515BB941754D5FEDB /* LookModels.swift */; };
+		1F91E98C673C1D07B2A649E4 /* CameraCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C434CA6546EF5096BB068917 /* CameraCapture.swift */; };
+		3459A9FE077D95521D95F882 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D585A02AA58ED2B37113A509 /* Feed.swift */; };
+		3517367D9184C63EBFE96DD1 /* Snapshotter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FDD5A70421045521A9FD8D /* Snapshotter.swift */; };
+		3B4699C6A08A49F0A20CD46C /* LookbookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF9291D9424585EF7E88B54 /* LookbookView.swift */; };
+		403435A7035BDB0168730A1B /* SnapshotSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D55A8E74D6752EAB0F050 /* SnapshotSheet.swift */; };
+		5B8BF112AC68854CB139CA25 /* VanityKit in Frameworks */ = {isa = PBXBuildFile; productRef = 17040EDF5F1CDC738661A7D5 /* VanityKit */; };
+		5D5AD253E9F23117018E4315 /* PartingChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED828D83FA06061AC9754B2 /* PartingChart.swift */; };
+		7CF8EBE6EDA9A9D92FE91267 /* LookStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D241F14F514E5D710A2A6D /* LookStore.swift */; };
+		85E3A6F38F6FD948E13A6907 /* CameraServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B739BD1F0C3E2AC872B1C30 /* CameraServer.swift */; };
+		867C716E66FD4ED275541B58 /* VanityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EE656C6CA3CC61B3A7413 /* VanityApp.swift */; };
+		8DB7C846274CF252106F4BCC /* VanityKit in Frameworks */ = {isa = PBXBuildFile; productRef = C4CC87EE75595DB5DE7F4621 /* VanityKit */; };
+		9A34DD4490B8E0EB3A7B869E /* CamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8183BD8E7C8C75F6F2B24012 /* CamModel.swift */; };
+		A32C0BBD132DD971A62ECC4B /* CamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F9F05C520D0B414055BF2B /* CamApp.swift */; };
+		AAD14A279EFA8D975C1C458C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B89081E4A124C7214A0682 /* OnboardingView.swift */; };
+		AAE29D647BCD810816435C59 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C171DA7E7F7D4F53F4B8B /* Theme.swift */; };
+		AAFF35B7FF84CC7D200DD2F8 /* MirrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65911C5232DF3AE985138D2 /* MirrorView.swift */; };
+		AC755CDF7D3B5458CD44D808 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB084225239A188E91E828E /* AppModel.swift */; };
+		AF3CEC9E706037D3AF4EEC0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1421E9277A3BA86F5A2E202E /* Assets.xcassets */; };
+		B7F8999E9B6AF27086B1DD7A /* LocalCameras.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA278D5B187A2CB278EF27F6 /* LocalCameras.swift */; };
+		C4CE863522455598AF0D99C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4155786ADE8BE6D8E9E4A9DC /* Assets.xcassets */; };
+		CF6E9664FF52B0786C4D7362 /* CompareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE853E1E97271FDD279A5454 /* CompareView.swift */; };
+		D9B1D258504E0E453EE88930 /* FeedTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B51246AEB1DB52CAD941D /* FeedTile.swift */; };
+		E6F58B5F232159039C29A09C /* FeedHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4400267CC606509F096AEB7 /* FeedHub.swift */; };
+		F543A18BD5E6FA17B188A069 /* FrameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26975507DA2C6FF1039542E6 /* FrameRouter.swift */; };
+		FA69FFA4279FF40AB3A3EC10 /* VideoLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D4456573CD5FD7C7DD094 /* VideoLayerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23C830ACADA92649E812F031 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D991DA20D8F9170E570890A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 298FEDF640DF4AEF99B03FAF;
+			remoteInfo = Vanity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1421E9277A3BA86F5A2E202E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		184EE656C6CA3CC61B3A7413 /* VanityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanityApp.swift; sourceTree = "<group>"; };
+		1FF9291D9424585EF7E88B54 /* LookbookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookbookView.swift; sourceTree = "<group>"; };
+		26975507DA2C6FF1039542E6 /* FrameRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameRouter.swift; sourceTree = "<group>"; };
+		359D4456573CD5FD7C7DD094 /* VideoLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLayerView.swift; sourceTree = "<group>"; };
+		3B739BD1F0C3E2AC872B1C30 /* CameraServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraServer.swift; sourceTree = "<group>"; };
+		3C8B51246AEB1DB52CAD941D /* FeedTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTile.swift; sourceTree = "<group>"; };
+		4155786ADE8BE6D8E9E4A9DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47FDD5A70421045521A9FD8D /* Snapshotter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshotter.swift; sourceTree = "<group>"; };
+		4B89E8A7DE4E31C6D1F26FCC /* VanityCam.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VanityCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED828D83FA06061AC9754B2 /* PartingChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartingChart.swift; sourceTree = "<group>"; };
+		56B89081E4A124C7214A0682 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		58ABDFAC5F754E3FEB169607 /* VanityKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VanityKit; path = Packages/VanityKit; sourceTree = SOURCE_ROOT; };
+		5D77C0D1701C35876953333A /* Vanity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vanity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E87D40DE01415B805C1430D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8183BD8E7C8C75F6F2B24012 /* CamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamModel.swift; sourceTree = "<group>"; };
+		8FB084225239A188E91E828E /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		9A5D55A8E74D6752EAB0F050 /* SnapshotSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotSheet.swift; sourceTree = "<group>"; };
+		AB592DA515BB941754D5FEDB /* LookModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookModels.swift; sourceTree = "<group>"; };
+		AE28AC43F672CCFC975EC9EE /* LookStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookStoreTests.swift; sourceTree = "<group>"; };
+		B0BE7AEB5D04AA3A8A72421D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B4400267CC606509F096AEB7 /* FeedHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHub.swift; sourceTree = "<group>"; };
+		B65911C5232DF3AE985138D2 /* MirrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorView.swift; sourceTree = "<group>"; };
+		C434CA6546EF5096BB068917 /* CameraCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCapture.swift; sourceTree = "<group>"; };
+		CA129596C11EFA23FFE33AB3 /* Vanity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vanity.entitlements; sourceTree = "<group>"; };
+		CA278D5B187A2CB278EF27F6 /* LocalCameras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCameras.swift; sourceTree = "<group>"; };
+		CFBF2AFFF675844A613CDEE0 /* LookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookDetailView.swift; sourceTree = "<group>"; };
+		D585A02AA58ED2B37113A509 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		DFD0B9095FD4E88A2C19B40B /* VanityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VanityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E27C171DA7E7F7D4F53F4B8B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		E6D241F14F514E5D710A2A6D /* LookStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookStore.swift; sourceTree = "<group>"; };
+		E6F9F05C520D0B414055BF2B /* CamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamApp.swift; sourceTree = "<group>"; };
+		FE853E1E97271FDD279A5454 /* CompareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41660327F1B52FE06813FF20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8BF112AC68854CB139CA25 /* VanityKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF9C862A2CC98B2F94546A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DB7C846274CF252106F4BCC /* VanityKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		088BF82D5D44A5EAD45CB814 /* Lookbook */ = {
+			isa = PBXGroup;
+			children = (
+				FE853E1E97271FDD279A5454 /* CompareView.swift */,
+				1FF9291D9424585EF7E88B54 /* LookbookView.swift */,
+				CFBF2AFFF675844A613CDEE0 /* LookDetailView.swift */,
+				AB592DA515BB941754D5FEDB /* LookModels.swift */,
+				E6D241F14F514E5D710A2A6D /* LookStore.swift */,
+				4ED828D83FA06061AC9754B2 /* PartingChart.swift */,
+			);
+			path = Lookbook;
+			sourceTree = "<group>";
+		};
+		1672E72F3EF6E49419878FB5 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				E27C171DA7E7F7D4F53F4B8B /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		3777FAB8D2604AB942EE0660 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				1421E9277A3BA86F5A2E202E /* Assets.xcassets */,
+				B0BE7AEB5D04AA3A8A72421D /* Info.plist */,
+				CA129596C11EFA23FFE33AB3 /* Vanity.entitlements */,
+				96F826B2EA79B618BF0593EF /* App */,
+				F1A8B1F835B63566317716BE /* Capture */,
+				088BF82D5D44A5EAD45CB814 /* Lookbook */,
+				F7A73456E609A49D99CBA96F /* Mirror */,
+				C779454DE7EB36395DAB3D31 /* Onboarding */,
+				1672E72F3EF6E49419878FB5 /* Theme */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		46457A55A4880DF424DF82F4 = {
+			isa = PBXGroup;
+			children = (
+				B8A7B45C85087EE4209D0B09 /* Apps */,
+				C00BF120228987818D801DC2 /* Packages */,
+				8AE0F19A1DE616047275417E /* Tests */,
+				F035E7F5D729CDB0F9A7F3D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AE0F19A1DE616047275417E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D0DD68050745C7D6248FD6A5 /* VanityTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		96F826B2EA79B618BF0593EF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8FB084225239A188E91E828E /* AppModel.swift */,
+				184EE656C6CA3CC61B3A7413 /* VanityApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B8A7B45C85087EE4209D0B09 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				BD714C22A386F82F1C964F67 /* Cam */,
+				3777FAB8D2604AB942EE0660 /* Mac */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		BD714C22A386F82F1C964F67 /* Cam */ = {
+			isa = PBXGroup;
+			children = (
+				4155786ADE8BE6D8E9E4A9DC /* Assets.xcassets */,
+				E6F9F05C520D0B414055BF2B /* CamApp.swift */,
+				C434CA6546EF5096BB068917 /* CameraCapture.swift */,
+				8183BD8E7C8C75F6F2B24012 /* CamModel.swift */,
+				5E87D40DE01415B805C1430D /* Info.plist */,
+			);
+			path = Cam;
+			sourceTree = "<group>";
+		};
+		C00BF120228987818D801DC2 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				58ABDFAC5F754E3FEB169607 /* VanityKit */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		C779454DE7EB36395DAB3D31 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				56B89081E4A124C7214A0682 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D0DD68050745C7D6248FD6A5 /* VanityTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE28AC43F672CCFC975EC9EE /* LookStoreTests.swift */,
+			);
+			path = VanityTests;
+			sourceTree = "<group>";
+		};
+		F035E7F5D729CDB0F9A7F3D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D77C0D1701C35876953333A /* Vanity.app */,
+				4B89E8A7DE4E31C6D1F26FCC /* VanityCam.app */,
+				DFD0B9095FD4E88A2C19B40B /* VanityTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1A8B1F835B63566317716BE /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				3B739BD1F0C3E2AC872B1C30 /* CameraServer.swift */,
+				D585A02AA58ED2B37113A509 /* Feed.swift */,
+				B4400267CC606509F096AEB7 /* FeedHub.swift */,
+				26975507DA2C6FF1039542E6 /* FrameRouter.swift */,
+				CA278D5B187A2CB278EF27F6 /* LocalCameras.swift */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		F7A73456E609A49D99CBA96F /* Mirror */ = {
+			isa = PBXGroup;
+			children = (
+				3C8B51246AEB1DB52CAD941D /* FeedTile.swift */,
+				B65911C5232DF3AE985138D2 /* MirrorView.swift */,
+				9A5D55A8E74D6752EAB0F050 /* SnapshotSheet.swift */,
+				47FDD5A70421045521A9FD8D /* Snapshotter.swift */,
+				359D4456573CD5FD7C7DD094 /* VideoLayerView.swift */,
+			);
+			path = Mirror;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22CDC5CC4E97C93DDF35FB03 /* VanityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B5C9FED3288BB5BCEA53295 /* Build configuration list for PBXNativeTarget "VanityTests" */;
+			buildPhases = (
+				156550EBF5C8280570F30893 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E927C8D0851D4A509BF7EB2B /* PBXTargetDependency */,
+			);
+			name = VanityTests;
+			packageProductDependencies = (
+			);
+			productName = VanityTests;
+			productReference = DFD0B9095FD4E88A2C19B40B /* VanityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		298FEDF640DF4AEF99B03FAF /* Vanity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 359C46B57C3A306CB6BB3A6A /* Build configuration list for PBXNativeTarget "Vanity" */;
+			buildPhases = (
+				F9FBB3BFADAD2BAEBBB380AE /* Sources */,
+				1A072D1BFBD4C12175438C35 /* Resources */,
+				FFF9C862A2CC98B2F94546A9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vanity;
+			packageProductDependencies = (
+				C4CC87EE75595DB5DE7F4621 /* VanityKit */,
+			);
+			productName = Vanity;
+			productReference = 5D77C0D1701C35876953333A /* Vanity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6E18131492C431A394D677A /* VanityCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE016F5A106CA293E8194322 /* Build configuration list for PBXNativeTarget "VanityCam" */;
+			buildPhases = (
+				9C53685A6546429511FAF24F /* Sources */,
+				1DEFFEEC23DAFA84A07114DF /* Resources */,
+				41660327F1B52FE06813FF20 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VanityCam;
+			packageProductDependencies = (
+				17040EDF5F1CDC738661A7D5 /* VanityKit */,
+			);
+			productName = VanityCam;
+			productReference = 4B89E8A7DE4E31C6D1F26FCC /* VanityCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D991DA20D8F9170E570890A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					22CDC5CC4E97C93DDF35FB03 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					298FEDF640DF4AEF99B03FAF = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					B6E18131492C431A394D677A = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 57FB1A053E5835102AE9D6EE /* Build configuration list for PBXProject "Vanity" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 46457A55A4880DF424DF82F4;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E55A06AC755A70EC984192E0 /* XCLocalSwiftPackageReference "Packages/VanityKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F035E7F5D729CDB0F9A7F3D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				298FEDF640DF4AEF99B03FAF /* Vanity */,
+				B6E18131492C431A394D677A /* VanityCam */,
+				22CDC5CC4E97C93DDF35FB03 /* VanityTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A072D1BFBD4C12175438C35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3CEC9E706037D3AF4EEC0B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DEFFEEC23DAFA84A07114DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4CE863522455598AF0D99C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		156550EBF5C8280570F30893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087326ED1D1CA97C219EB354 /* LookStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C53685A6546429511FAF24F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32C0BBD132DD971A62ECC4B /* CamApp.swift in Sources */,
+				9A34DD4490B8E0EB3A7B869E /* CamModel.swift in Sources */,
+				1F91E98C673C1D07B2A649E4 /* CameraCapture.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9FBB3BFADAD2BAEBBB380AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC755CDF7D3B5458CD44D808 /* AppModel.swift in Sources */,
+				85E3A6F38F6FD948E13A6907 /* CameraServer.swift in Sources */,
+				CF6E9664FF52B0786C4D7362 /* CompareView.swift in Sources */,
+				3459A9FE077D95521D95F882 /* Feed.swift in Sources */,
+				E6F58B5F232159039C29A09C /* FeedHub.swift in Sources */,
+				D9B1D258504E0E453EE88930 /* FeedTile.swift in Sources */,
+				F543A18BD5E6FA17B188A069 /* FrameRouter.swift in Sources */,
+				B7F8999E9B6AF27086B1DD7A /* LocalCameras.swift in Sources */,
+				00A9B10B35EC43CF2375D0E8 /* LookDetailView.swift in Sources */,
+				1C4F3BF0C7272E19D45A2888 /* LookModels.swift in Sources */,
+				7CF8EBE6EDA9A9D92FE91267 /* LookStore.swift in Sources */,
+				3B4699C6A08A49F0A20CD46C /* LookbookView.swift in Sources */,
+				AAFF35B7FF84CC7D200DD2F8 /* MirrorView.swift in Sources */,
+				AAD14A279EFA8D975C1C458C /* OnboardingView.swift in Sources */,
+				5D5AD253E9F23117018E4315 /* PartingChart.swift in Sources */,
+				403435A7035BDB0168730A1B /* SnapshotSheet.swift in Sources */,
+				3517367D9184C63EBFE96DD1 /* Snapshotter.swift in Sources */,
+				AAE29D647BCD810816435C59 /* Theme.swift in Sources */,
+				867C716E66FD4ED275541B58 /* VanityApp.swift in Sources */,
+				FA69FFA4279FF40AB3A3EC10 /* VideoLayerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E927C8D0851D4A509BF7EB2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 298FEDF640DF4AEF99B03FAF /* Vanity */;
+			targetProxy = 23C830ACADA92649E812F031 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		634A96662CC1310A0EF43452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		665A177915DFF527F30D9D99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Apps/Cam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.vanity.cam;
+				PRODUCT_NAME = "Vanity Cam";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73666A7486CADB400493B47D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Apps/Mac/Vanity.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Apps/Mac/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.vanity.mac;
+				PRODUCT_NAME = Vanity;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7434CCEDB019D0F30D3AC61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Apps/Cam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.vanity.cam;
+				PRODUCT_NAME = "Vanity Cam";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC582654962A58F485E3FC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.vanity.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vanity.app/Contents/MacOS/Vanity";
+			};
+			name = Release;
+		};
+		CB5F66DBC5F11B6A0E520CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Apps/Mac/Vanity.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Apps/Mac/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.vanity.mac;
+				PRODUCT_NAME = Vanity;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D549A935DEFA23B41B331A8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DDE52B3D4EDC215091A03561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.vanity.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vanity.app/Contents/MacOS/Vanity";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		359C46B57C3A306CB6BB3A6A /* Build configuration list for PBXNativeTarget "Vanity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB5F66DBC5F11B6A0E520CFC /* Debug */,
+				73666A7486CADB400493B47D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		57FB1A053E5835102AE9D6EE /* Build configuration list for PBXProject "Vanity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634A96662CC1310A0EF43452 /* Debug */,
+				D549A935DEFA23B41B331A8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5B5C9FED3288BB5BCEA53295 /* Build configuration list for PBXNativeTarget "VanityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE52B3D4EDC215091A03561 /* Debug */,
+				BC582654962A58F485E3FC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DE016F5A106CA293E8194322 /* Build configuration list for PBXNativeTarget "VanityCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				665A177915DFF527F30D9D99 /* Debug */,
+				7434CCEDB019D0F30D3AC61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		E55A06AC755A70EC984192E0 /* XCLocalSwiftPackageReference "Packages/VanityKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/VanityKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17040EDF5F1CDC738661A7D5 /* VanityKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VanityKit;
+		};
+		C4CC87EE75595DB5DE7F4621 /* VanityKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VanityKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D991DA20D8F9170E570890A7 /* Project object */;
+}
