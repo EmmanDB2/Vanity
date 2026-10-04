@@ -317,15 +317,15 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					22CDC5CC4E97C93DDF35FB03 = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = 7S3W322U4G;
 						ProvisioningStyle = Automatic;
 					};
 					298FEDF640DF4AEF99B03FAF = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = 7S3W322U4G;
 						ProvisioningStyle = Automatic;
 					};
 					B6E18131492C431A394D677A = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = 7S3W322U4G;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -467,7 +467,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7S3W322U4G;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -507,7 +507,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.vanity.cam;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmanuelwalters.vanity.cam;
 				PRODUCT_NAME = "Vanity Cam";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -527,7 +527,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.vanity.mac;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmanuelwalters.vanity.mac;
 				PRODUCT_NAME = Vanity;
 				SDKROOT = macosx;
 			};
@@ -543,7 +543,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.vanity.cam;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmanuelwalters.vanity.cam;
 				PRODUCT_NAME = "Vanity Cam";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -560,7 +560,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.vanity.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmanuelwalters.vanity.tests;
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vanity.app/Contents/MacOS/Vanity";
 			};
@@ -579,7 +579,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.vanity.mac;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmanuelwalters.vanity.mac;
 				PRODUCT_NAME = Vanity;
 				SDKROOT = macosx;
 			};
@@ -622,7 +622,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7S3W322U4G;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -655,7 +655,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.vanity.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmanuelwalters.vanity.tests;
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vanity.app/Contents/MacOS/Vanity";
 			};

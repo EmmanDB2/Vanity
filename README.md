@@ -48,7 +48,7 @@ xcodegen generate       # re-run after adding/removing files or editing project.
 open Vanity.xcodeproj
 ```
 
-1. In `project.yml`, replace `com.example.vanity` with your own bundle ID prefix and set `DEVELOPMENT_TEAM`. (Or set both in Xcode's *Signing & Capabilities* tab.)
+1. Signing is set in `project.yml` (`DEVELOPMENT_TEAM` and the `com.emmanuelwalters.vanity` bundle IDs). Change them there, not in Xcode, because `xcodegen generate` overwrites Xcode's settings.
 2. Run the **Vanity** scheme on the Mac.
 3. Run the **VanityCam** scheme on the iPad. In the Simulator it streams a test pattern, so you can try it without a device.
 4. Tests: `⌘U` on the Vanity scheme runs the Lookbook tests and the VanityKit (streaming/delay) tests.

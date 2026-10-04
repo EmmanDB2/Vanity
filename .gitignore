@@ -3,3 +3,6 @@
 xcuserdata/
 DerivedData/
 *.xcuserstate
+
+# Xcode build output (xcodebuild -derivedDataPath build)
+build/
