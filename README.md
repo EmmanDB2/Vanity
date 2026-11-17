@@ -53,11 +53,15 @@ open Vanity.xcodeproj
 3. Run the **VanityCam** scheme on the iPad. In the Simulator it streams a test pattern, so you can try it without a device.
 4. Tests: `⌘U` on the Vanity scheme runs the Lookbook tests and the VanityKit (streaming/delay) tests.
 
-### Shipping to her devices with TestFlight
+### Installing on other devices with TestFlight
 
 1. In App Store Connect, create two apps (macOS **Vanity** and iOS **Vanity Cam**) with the bundle IDs from `project.yml`.
 2. In Xcode, for each scheme: *Product → Archive → Distribute App → TestFlight & App Store*.
-3. In TestFlight, add her Apple ID as an internal tester. She installs the **TestFlight** app on her Mac and iPad and taps Install. Updates then arrive automatically.
+3. In TestFlight, add the tester's Apple ID as an internal tester. They install the **TestFlight** app on their Mac and iPad and tap Install. Updates then arrive automatically.
+
+## Built with
+
+Swift · SwiftUI · AVFoundation · VideoToolbox (H.264) · Network framework (Bonjour) · XcodeGen
 
 ## How it works
 
