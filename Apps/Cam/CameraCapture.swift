@@ -73,9 +73,6 @@ final class CameraCapture: NSObject, AVCaptureVideoDataOutputSampleBufferDelegat
 
     private func configure(position: AVCaptureDevice.Position) {
         session.beginConfiguration()
-        if session.canSetSessionPreset(.hd1920x1080) {
-            session.sessionPreset = .hd1920x1080
-        }
         addInput(position: position)
 
         output.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange]
@@ -91,9 +88,15 @@ final class CameraCapture: NSObject, AVCaptureVideoDataOutputSampleBufferDelegat
     private func addInput(position: AVCaptureDevice.Position) {
         let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: position)
             ?? AVCaptureDevice.default(for: .video)
+        // .high fits every camera, so the input is never refused for its resolution;
+        // then step up to 1080p if this camera can do it.
+        session.sessionPreset = .high
         guard let device, let input = try? AVCaptureDeviceInput(device: device), session.canAddInput(input) else { return }
         session.addInput(input)
         self.input = input
+        if session.canSetSessionPreset(.hd1920x1080) {
+            session.sessionPreset = .hd1920x1080
+        }
 
         // Steady 30 fps keeps the stream smooth and the iPad cool.
         if (try? device.lockForConfiguration()) != nil {

@@ -65,6 +65,8 @@ final class LocalCameraSource: NSObject, AVCaptureVideoDataOutputSampleBufferDel
     private let router: FrameRouter
     private let session = AVCaptureSession()
     private let queue = DispatchQueue(label: "vanity.camera", qos: .userInteractive)
+    private var runtimeErrorObserver: NSObjectProtocol?
+    private var stopped = false
 
     init(device: AVCaptureDevice, router: FrameRouter) {
         self.device = device
@@ -72,6 +74,13 @@ final class LocalCameraSource: NSObject, AVCaptureVideoDataOutputSampleBufferDel
     }
 
     func start() {
+        // If macOS hiccups (another app grabs the camera, the camera resets), start it again.
+        runtimeErrorObserver = NotificationCenter.default.addObserver(forName: AVCaptureSession.runtimeErrorNotification, object: session, queue: nil) { [weak self] _ in
+            guard let self else { return }
+            self.queue.asyncAfter(deadline: .now() + 1) {
+                if !self.stopped && !self.session.isRunning { self.session.startRunning() }
+            }
+        }
         queue.async { [self] in
             configure()
             session.startRunning()
@@ -79,7 +88,9 @@ final class LocalCameraSource: NSObject, AVCaptureVideoDataOutputSampleBufferDel
     }
 
     func stop() {
+        if let runtimeErrorObserver { NotificationCenter.default.removeObserver(runtimeErrorObserver) }
         queue.async { [self] in
+            stopped = true
             session.stopRunning()
         }
     }
@@ -88,14 +99,16 @@ final class LocalCameraSource: NSObject, AVCaptureVideoDataOutputSampleBufferDel
         session.beginConfiguration()
         defer { session.commitConfiguration() }
 
+        // Attach the camera before choosing a resolution: a session already set to 1080p refuses a
+        // camera that can't do 1080p (e.g. the 720p FaceTime camera in M1 MacBook Airs).
+        guard let input = try? AVCaptureDeviceInput(device: device), session.canAddInput(input) else { return }
+        session.addInput(input)
+
         if session.canSetSessionPreset(.hd1920x1080) {
             session.sessionPreset = .hd1920x1080
         } else if session.canSetSessionPreset(.high) {
             session.sessionPreset = .high
         }
-
-        guard let input = try? AVCaptureDeviceInput(device: device), session.canAddInput(input) else { return }
-        session.addInput(input)
 
         let output = AVCaptureVideoDataOutput()
         output.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange]
