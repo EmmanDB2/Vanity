@@ -1,6 +1,6 @@
 # Vanity ✨
 
-A multi-camera hair mirror for Mac. Front, sides and back are all on one screen.
+A Mac app that turns your laptop, iPhone and iPad into one multi-angle mirror, so you can see the front, sides and back of your hair at once. It can also replay on a delay and save looks to recreate later.
 
 - **Vanity** (macOS 14+): the mirror and the Lookbook.
 - **Vanity Cam** (iPadOS/iOS 17+): turns an iPad or a spare iPhone into an extra camera.
@@ -61,7 +61,7 @@ open Vanity.xcodeproj
 
 ## Built with
 
-Swift · SwiftUI · AVFoundation · VideoToolbox (H.264) · Network framework (Bonjour) · XcodeGen
+Swift · SwiftUI · AVFoundation
 
 ## How it works
 
